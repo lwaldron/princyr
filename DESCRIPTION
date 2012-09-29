@@ -1,0 +1,11 @@
+Package: princyr
+Maintainer: Princy Parsana <princyp@gmail.com>
+Depends: R (>= 2.10), limma
+Imports: BiocGenerics
+Suggests: pensim
+Author: Princy Parsana and Levi Waldron
+Version: 0.2
+Date: 2012-09-29
+License: GPL (>2.0)
+Title: GSEA for Principal Components Analysis
+Description: Package for identifying reproducible principal components across datasets and characterizing those components by GSEA.
