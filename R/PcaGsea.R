@@ -16,6 +16,8 @@ PcaGsea <- function
  ...
 ### arguments passed on to prcomp function.  scale.=TRUE is advisable.
  ){
+    if(nrow(exp) < ncol(exp))
+        warning("exp should probably have more rows (features) than columns (samples).")
     exp <- as.matrix(exp)
     exp.pca <- prcomp(t(exp), ...)
     prop.of.variance <- summary(exp.pca)$importance["Proportion of Variance", ]
